@@ -1,5 +1,6 @@
-from transformers import (RobertaConfig, RobertaTokenizer, RobertaForMaskedLM, DataCollatorForLanguageModeling, Trainer,
+from transformers import (RobertaConfig, RobertaTokenizer, DataCollatorForLanguageModeling, Trainer,
     TrainingArguments)
+from modeling_roberta import RobertaForMaskedLM
 import torch
 import torch.nn as nn
 from torch.utils.data import Dataset, DataLoader
